@@ -1,0 +1,757 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+    width: 100%;
+    height: 60px;
+    overflow: auto;
+    background-color: burlywood;
+    position: fixed;
+    opacity: .8;
+    z-index: 4;
+}
+.ul1
+{
+float: right;
+margin-right: 80px;
+margin-top: 18PX;
+}
+.img2
+{
+    float: left;
+    width: 80px;
+    height: 60px;
+    margin-left: 50PX;
+    border-radius: 15px;
+}
+.li1
+{
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+}
+.li1 a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+.li1::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 20%;
+    background-color: rgb(35, 35, 36);
+    opacity: 0;
+
+}
+.li1:hover::after
+{
+    width: 100%;
+    opacity: .6;
+    transition: 1s;
+}
+.home
+{
+background-image: url(../imgs/photo.png);
+height: 100vh;
+background-size: cover;
+position: relative;
+}
+.home-overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,.6);
+   
+}
+.home-content
+{
+width: 60%; 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+.home-title
+{
+color: white;
+font-size: 55px;
+text-transform: uppercase;
+font-family: cursive;
+}
+.home-p
+{
+    text-transform: capitalize;
+    color: white;
+    letter-spacing: 1px;
+    margin: 15px 0px;
+}
+.btn
+{
+    width: 150px;
+    padding:15px 0px ;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.btn-learn
+{
+    background-color: burlywood;
+    color: white;
+    margin-left:10px ;
+}
+.btn:hover
+{
+    opacity: .5;
+}
+.about , .work , .offer , .popular , .items , .pricing , .team , .news , .footer
+{
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+}
+.about-section  
+{
+    margin: auto;
+    padding: 120px 0;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.about-section h2 , .work-section h2 , .offer-section h2 ,.pricing-title h2 , .team-title h2 , .news-title h2
+{
+    text-transform: capitalize;
+}
+.line
+{
+    height: 4px;
+    width: 60px;
+    background-color: burlywood;
+    margin: 10px  auto  0px  auto;  
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+.about-item
+{
+    width: 25%;
+    height: 170px;
+    border: 1px solid burlywood;
+    float: left;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    position: relative; 
+
+}
+.mid
+{
+    margin: 0  5%;
+}
+.about-item h3
+{
+    
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 15px 0 ;
+}
+.about-item p
+{
+    font-size: 24px;
+    margin: 15px 0 ; 
+}
+.about-item a
+{
+    font-size:24px ;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: burlywood;
+}
+.about-item i
+{
+    font-size: 30px;
+    color: burlywood;
+}
+.about-item a:hover
+{
+    color: antiquewhite;
+}
+.about-item:after ,.offer-item:after ,.news-item:after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: antiquewhite;
+}
+.about-item:hover:after , .offer-item:hover:after , .news-item:hover:after
+{
+
+   transition: 1s;
+   width: 100%;
+   height: 100%;
+   opacity: .6;
+}
+
+.clear
+{
+    clear: both;
+}
+.work
+{
+    height: 120vh;
+}
+.work-section 
+{ 
+    padding: 120px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.work-item 
+{
+    width: 25%;
+    height: 250px;
+    float: left;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    position: relative; 
+    margin-bottom: 30px;
+}
+.work-item img
+{
+    width: 100%;
+   height: 100%;
+   
+}
+.work-info
+{
+    width: 60%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+text-transform: capitalize;
+}
+.work-info p
+{
+    position: relative;
+    font-size: 25px;
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0s;
+}
+.work-info h3
+{
+    position: relative;
+    font-size: 25px;
+    margin: 15px 0;
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: .3s;
+}
+.work-info a
+{
+    position: relative;
+    font-size: 25px;
+    background-color: rgb(229, 185, 128);
+    text-align: center;
+    padding: 6px;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: .6s;
+}
+.work-overlay
+{
+    position: absolute;
+    text-align: center;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: antiquewhite;
+    transition: 1s;
+    opacity: 0;
+}
+.work-overlay:hover 
+{
+opacity: .5;
+}
+.work-item:hover .work-overlay h3,
+.work-item:hover .work-overlay a,
+.work-item:hover .work-overlay p{
+   opacity: 1;
+   visibility: visible;
+}
+.offer-section , .pricing-section , .team-section , .news-section
+{
+    padding: 100px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    color: white; 
+}
+.offer , .pricing , .team
+{
+    height: 100vh;
+}
+.offer-item
+{
+    width: 25%;
+    height: 130px;
+    border: 1px solid burlywood;
+    float: left;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    position: relative; 
+    margin-bottom: 30px;
+}
+.offer-item i
+{
+    position: absolute;
+    font-size: 30px;
+    color: burlywood;
+}
+.offer-item h3
+{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-left: 50px;
+}
+.offer-item p
+{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.popular-section
+{
+    width: 30%;
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+    float: left;
+}
+.line1
+{
+    
+    height: 4px;
+    width: 60px;
+    background-color: burlywood; 
+    margin: 10px 0 0 0; 
+}
+.popular-item
+{
+    float: right;
+}
+.popular-section p 
+{
+    margin: 60px 0 60px 0;
+}
+.popular-section ul
+{
+    list-style:none ;
+}
+.popular-section li
+{
+    margin: 30px 0 30px 0; 
+}
+.popular-section i
+{
+    color: burlywood;
+}
+.popular-item-img img
+{
+   width: 70%;
+}
+.popular-item-list ul
+{
+list-style: none;
+margin-left: 120px;
+   
+   
+}
+.popular-item-list li
+{
+    margin: 10px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color:rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.popular-item-list  li.li2
+{
+    background-color: burlywood;
+}
+.popular-item-list li:hover
+{
+    background-color: burlywood;
+}
+.popular , .news
+{
+    height: 80vh;
+}
+.items , .design 
+{
+    height: 60vh;
+    position: relative;
+    background-image: url(../imgs/photo10.png);
+    height:350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7)
+}
+.item 
+{
+    color: azure;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.itt 
+{
+   
+    margin-left: 100px;
+    float: left;
+    text-align: center;
+}
+.itt i
+{
+    color: burlywood;
+    font-size: 50px;
+}
+.itt h3
+{
+    font-size: 30px;
+    margin: 15px 0;
+}
+.itt p 
+{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.pricing-item 
+{
+    width: 25%;
+    height: 350px;
+    border: 1px solid burlywood;
+    float: left;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    position: relative; 
+    margin-bottom: 30px;
+}
+.circle
+{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 1px solid burlywood;
+}
+.circle img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+.pricing-item .type 
+{
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 10px;
+}
+.pricing-item .price 
+{
+    text-transform: capitalize;
+    padding: 20px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.pricing-item button
+{
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: burlywood;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+}
+.pricing-item:after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: antiquewhite;
+    opacity: 0;
+}
+.pricing-item:hover::after
+{
+    transition: 1s;
+    height: 100%;
+    opacity: .6;
+}
+.design-item
+{
+    float: left;
+    width: 43%;
+    color: white;
+}
+.design-items img 
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50px;
+}
+.design-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.design-item p
+{
+    margin-top: 70px;
+}
+.design-items p 
+{
+    text-transform: capitalize;
+    margin-left: 100px;
+    padding: 20px;
+    font-size: 25px
+}
+.design-items span
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-left: 100px;
+    padding: 20px;
+}
+.design-item
+{
+    padding: 12px;
+    margin-left:20px ;
+}
+.team-item
+{
+    width: 25%;
+    height: 400px;
+    border: 1px solid burlywood;
+    float: left;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    position: relative; 
+    margin-bottom: 30px;
+    text-align: center;
+}
+.team-item img 
+{
+    width: 320px;
+    height: 320px;
+    border-radius: 15px;
+}
+.team-item p
+{
+    font-size: 25px;
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+.team-item span 
+{
+    font-size: 20px;
+}
+.team-overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    opacity: 0; 
+     background-color: antiquewhite;
+}
+
+.team-overlay a
+{
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  width: 35px;
+  height: 30px;
+  margin-left: auto;
+  background-color: rgb(98, 98, 188);
+  color: white;
+  padding: 4px;
+}
+.team-a 
+{
+
+    margin-left: 170px;
+    margin-top: 80px;
+    width: 150px;
+    height: 150px;
+}
+.team-overlay:hover
+{
+    transition: 1s;
+    opacity: .6;
+} 
+.news-section
+{
+    padding: 30px;
+}
+.news-item
+{
+    position: relative;
+    width: 28%;
+    float: left;
+    height: 500px;
+    padding-left: 20px;
+}
+.news-item ul 
+{
+    list-style: none;
+}
+.news-item ul li 
+{
+    color: white;
+    display: inline;
+}
+.news-item ul .lim 
+{
+    margin: 0 20px 0 20px;
+}
+.news-item ul i 
+{
+    color: burlywood;
+}
+.news-item-img
+{
+   height: 330px;
+}
+.news-item h3
+{
+    margin: 10px 0 10px 0;
+    font-size: 27px;
+    color: white;
+}
+.news-item p
+{
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    color: white;
+}
+.news-item a
+{
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    color: burlywood;
+    
+}
+.div3 
+{
+    float: left;
+    background-color: blue;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    border-radius: 50%;
+}
+.footer
+{
+    text-align: center;
+    padding: 80px 0;
+}
+.footer img 
+{
+  width: 20%;
+  height: 150px; 
+  border-radius: 10px; 
+}
+.footer ul
+{
+    list-style: none;
+    margin: 40px 0;
+}
+.footer li 
+{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(101, 101, 214);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer a 
+{
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    padding: 10px 0;
+    
+}
+.footer p 
+{
+    color: white;
+    margin: 30px 0 10px 0;
+}
+.footer li:hover
+{
+    opacity: .5;
+}
+.footer a:hover
+{
+    opacity: .5;
+}
